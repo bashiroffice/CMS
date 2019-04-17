@@ -10,7 +10,7 @@ class BasicSettingsController extends Controller
 {
     public function basicSettings()
     {
-        $basicSetting = BasicSetting::where('id', 1)->first();
+        $basicSetting = BasicSetting::first();
         return view('admin.pages.basicSettings',compact('basicSetting'));
         
     }
@@ -46,7 +46,7 @@ class BasicSettingsController extends Controller
 
         //update query
 
-        $basicSetting = BasicSetting::find(1);
+        $basicSetting = BasicSetting::first();
 
         $basicSetting->websiteTitle = $request->websiteTitle;
         $basicSetting->colorCode = $request->colorCode;
@@ -63,8 +63,9 @@ class BasicSettingsController extends Controller
 
 
         //redirect
-        Session()->flash('status', 'Content successfully updated!');
-        return redirect()->route('admin.basicSettingsPro');
+        Session()->flash('success', 'Content successfully updated!');
+
+        return redirect()->back();
 
     }
 }

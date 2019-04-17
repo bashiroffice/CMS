@@ -19,7 +19,10 @@
 
     {{--customs css--}}
     <link rel="stylesheet" href="{{asset('assets/admin/css/customs.css')}}">
-    
+
+    {{--toastr--}}
+    <link href="{{asset('assets/admin/css/toastr.css')}}" rel="stylesheet"/>
+    <script src="{{asset('assets/admin/js/toastr.js')}}"></script>
 
     <title>@yield('title')</title>
 </head>
@@ -32,7 +35,22 @@
        {{--sidebar--}}
        @include('admin.includes.sidebar')
 
+
         <div class="content p-4">
+
+            {{--toastr--}}
+            <script>
+                @if(Session()->has('success'))
+
+                       toastr.success("{{Session('success')}}")
+                @endif
+
+                @if(Session()->has('warning'))
+
+                       toastr.warning("{{Session('warning')}}")
+                @endif
+            </script>
+
             @yield('body')
         </div>
     </div>
@@ -43,67 +61,6 @@
 <script src=" {{asset('assets/admin/js/moment.min.js')}}"></script>
 <script src=" {{asset('assets/admin/js/fullcalendar.min.js')}}"></script>
 <script src=" {{asset('assets/admin/js/bootadmin.min.js')}}"></script>
-
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-        google.charts.load('current', {'packages': ['corechart']});
-        google.charts.setOnLoadCallback(drawChart3);
-        google.charts.setOnLoadCallback(drawChart4);
-
-        function drawChart3() {
-            var data = google.visualization.arrayToDataTable([
-                ['Year', 'Sales', 'Expenses'],
-                ['2013', 1000, 400],
-                ['2014', 1170, 460],
-                ['2015', 660, 1120],
-                ['2016', 1030, 540]
-            ]);
-
-            var options = {
-                title: 'Company Performance',
-                hAxis: {title: 'Year', titleTextStyle: {color: '#333'}},
-                vAxis: {minValue: 0}
-            };
-
-            var chart = new google.visualization.AreaChart(document.getElementById('chart_div_3'));
-            chart.draw(data, options);
-        }
-
-        function drawChart4() {
-            var data = google.visualization.arrayToDataTable([
-                ['Country', 'Popularity'],
-                ['Germany', 200],
-                ['United States', 300],
-                ['Brazil', 400],
-                ['Canada', 500],
-                ['France', 600],
-                ['RU', 700]
-            ]);
-
-            var options = {};
-
-            var chart = new google.visualization.GeoChart(document.getElementById('chart_div_4'));
-
-            chart.draw(data, options);
-        }
-    </script>
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118868344-1"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-118868344-1');
-</script>
-
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-4097235499795154",
-    enable_page_level_ads: true
-  });
-</script>
 
 </body>
 </html>

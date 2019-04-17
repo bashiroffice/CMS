@@ -8,13 +8,6 @@
 
     <h2 class="mb-4">Basic Settings</h2>
 
-    @if(Session()->has('status'))
-        <div class="alert alert-success">
-            <p>{{Session('status')}}</p>
-
-        </div>
-        @endif
-
     <div class="card mb-4">
         <div class="card-header bg-white font-weight-bold">
             Basic Settings
@@ -34,7 +27,7 @@
 
                     <div class="col-md-4 mb-3">
                         <label for="validationServer01"><strong>Site base color code</strong></label>
-                        <input type="text" name="colorCode" class="form-control form-control-lg"  value="{{$basicSetting->colorCode}}" required="">
+                        <input type="text" name="colorCode" class="form-control form-control-lg"  value="{{$basicSetting->colorCode}}" required="" style="background: {{$basicSetting->colorCode}};">
 
                     </div>
 
@@ -45,8 +38,6 @@
                     </div>
 
                 </div>
-
-
 
 
                 <div class="form-row">
@@ -75,9 +66,6 @@
                     </div>
 
                 </div>
-
-
-
 
                 <div class="form-row">
 
@@ -119,7 +107,9 @@
 
     </div>
 
-
-
-
+    {{--dropdown active--}}
+    <script>
+        $('#sm_base li:nth-child(1)').addClass('active');
+        $('#sm_base').addClass('show');
+    </script>
 @endsection

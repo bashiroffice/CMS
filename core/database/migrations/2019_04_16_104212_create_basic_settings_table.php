@@ -28,6 +28,11 @@ class CreateBasicSettingsTable extends Migration
             $table->integer('EmailNotification');
             $table->integer('SMSNotification');
 
+            $table->text('sms_api');
+            $table->string('email_sent_form');
+            $table->text('email_template');
+
+
             $table->timestamps();
         });
     }
