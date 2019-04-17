@@ -2,22 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6fdfd9ac-2331-4d50-b4ca-ff290939ba66" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/admin/css/toastr.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/admin/js/toastr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/resources/views/admin/pages/AdminProfile.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/resources/views/admin/pages/EmailSettings.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/resources/views/admin/pages/SmsSettings.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/resources/views/admin/pages/changeAdminPassword.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/app/Http/Controllers/Admin/BasicSettingsController.php" afterPath="$PROJECT_DIR$/core/app/Http/Controllers/Admin/BasicSettingsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/app/Http/Controllers/Admin/DashboardController.php" afterPath="$PROJECT_DIR$/core/app/Http/Controllers/Admin/DashboardController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/database/migrations/2019_04_16_104212_create_basic_settings_table.php" afterPath="$PROJECT_DIR$/core/database/migrations/2019_04_16_104212_create_basic_settings_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/resources/views/admin/auth/login.blade.php" afterPath="$PROJECT_DIR$/core/resources/views/admin/auth/login.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/resources/views/admin/includes/nav.blade.php" afterPath="$PROJECT_DIR$/core/resources/views/admin/includes/nav.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/resources/views/admin/includes/sidebar.blade.php" afterPath="$PROJECT_DIR$/core/resources/views/admin/includes/sidebar.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/resources/views/admin/master.blade.php" afterPath="$PROJECT_DIR$/core/resources/views/admin/master.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/resources/views/admin/pages/basicSettings.blade.php" afterPath="$PROJECT_DIR$/core/resources/views/admin/pages/basicSettings.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/resources/views/admin/pages/dashboard.blade.php" afterPath="$PROJECT_DIR$/core/resources/views/admin/pages/dashboard.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/routes/web.php" afterPath="$PROJECT_DIR$/core/routes/web.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,7 +36,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="changeAdminPassword.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="changeAdminPassword.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/resources/views/admin/pages/changeAdminPassword.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
@@ -96,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="web.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="77" lean-forward="true" selection-start-line="3" selection-start-column="77" selection-end-line="3" selection-end-column="77" />
+            <state relative-caret-position="765">
+              <caret line="45" column="84" lean-forward="false" selection-start-line="45" selection-start-column="84" selection-end-line="45" selection-end-column="84" />
               <folding />
             </state>
           </provider>
@@ -165,12 +149,12 @@
         <option value="$PROJECT_DIR$/core/resources/views/admin/pages/EmailSettings.blade.php" />
         <option value="$PROJECT_DIR$/core/resources/views/admin/pages/basicSettings.blade.php" />
         <option value="$PROJECT_DIR$/core/resources/views/admin/pages/AdminProfile.blade.php" />
-        <option value="$PROJECT_DIR$/core/routes/web.php" />
         <option value="$PROJECT_DIR$/core/resources/views/admin/master.blade.php" />
         <option value="$PROJECT_DIR$/core/resources/views/admin/auth/login.blade.php" />
         <option value="$PROJECT_DIR$/core/app/Http/Controllers/Admin/DashboardController.php" />
         <option value="$PROJECT_DIR$/core/resources/views/admin/includes/nav.blade.php" />
         <option value="$PROJECT_DIR$/core/resources/views/admin/pages/changeAdminPassword.blade.php" />
+        <option value="$PROJECT_DIR$/core/routes/web.php" />
       </list>
     </option>
   </component>
@@ -541,12 +525,12 @@
       <workItem from="1555387581759" duration="2309000" />
       <workItem from="1555390560854" duration="16814000" />
       <workItem from="1555410478044" duration="9000000" />
-      <workItem from="1555474476816" duration="20693000" />
+      <workItem from="1555474476816" duration="21839000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48816000" />
+    <option name="totallyTimeSpent" value="49962000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="1" />
@@ -896,14 +880,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="77" lean-forward="true" selection-start-line="3" selection-start-column="77" selection-end-line="3" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/resources/views/admin/master.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -945,6 +921,14 @@
           <folding>
             <element signature="e#538#572#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="84" lean-forward="false" selection-start-line="45" selection-start-column="84" selection-end-line="45" selection-end-column="84" />
+          <folding />
         </state>
       </provider>
     </entry>
